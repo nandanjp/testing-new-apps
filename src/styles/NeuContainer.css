@@ -1,0 +1,24 @@
+.neu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+}
+
+@media screen and (max-width: 600px) {
+  .neu-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-image: linear-gradient(180deg, black 50%, white 50%);
+    gap: 10rem;
+  }
+}
